@@ -79,3 +79,9 @@ ai-internship/
 - [ ] Day 18 - One-Command Full Stack
 - [ ] Day 19 - Final Repo & Demo
 - [ ] Day 20 - Final Submission
+
+## Day 2 Git Workflow
+
+During Day 2, I created the repository, practiced Git commits,
+created a feature branch, and used a Pull Request to merge changes
+back into the main branch.
