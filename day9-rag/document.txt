@@ -1,0 +1,37 @@
+Artificial Intelligence is a field of computer science that focuses on creating systems capable of performing tasks that normally require human intelligence. These tasks include understanding language, recognizing images, making predictions, solving problems, and assisting people with decisions.
+
+Machine learning is a major part of artificial intelligence. Instead of explicitly programming every rule, machine learning systems learn patterns from examples. The quality and quantity of training data can strongly affect the performance of a machine learning model.
+
+Natural language processing allows computers to work with human language. It is used in applications such as chatbots, document summarization, translation, sentiment analysis, and question-answering systems.
+
+Large language models are machine learning models trained on very large collections of text. They can generate text, answer questions, summarize documents, rewrite content, and assist with programming tasks. Their responses depend on the information available to the model and the instructions provided to it.
+
+Embeddings are numerical representations of text. An embedding model converts a piece of text into a vector containing many numerical values. Texts with similar meanings generally produce vectors that are closer together in the embedding space.
+
+Vector similarity is used to determine how closely two embeddings are related. Cosine similarity is a common method for comparing vectors because it measures the angle between them rather than simply comparing their magnitude.
+
+Retrieval-Augmented Generation, commonly called RAG, combines information retrieval with text generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant information from a collection of documents and uses that information when generating an answer.
+
+The first stage of a RAG pipeline is document ingestion. During ingestion, a document is loaded, cleaned, divided into smaller pieces, and converted into embeddings. These embeddings can then be stored for later retrieval.
+
+Chunking is the process of dividing a large document into smaller sections called chunks. Chunking is important because very large documents may contain more information than can be efficiently processed at once. Smaller chunks also allow a retrieval system to identify specific passages that are relevant to a question.
+
+Chunk size determines approximately how much text is included in each chunk. A small chunk may provide very specific information, while a large chunk may provide more context. The best chunk size depends on the type of documents and questions used by the application.
+
+Chunk overlap means that part of one chunk is repeated in the following chunk. Overlap helps prevent important information from being lost when a sentence or idea occurs near a chunk boundary. The amount of overlap should normally be smaller than the chunk size.
+
+A retrieval system compares the embedding of a user's question with the embeddings of document chunks. The chunks with the highest similarity scores are considered the most relevant results. A system may retrieve the top three or top five chunks before generating an answer.
+
+A similarity score provides an indication of how closely a question matches a document chunk. Higher similarity generally means that the chunk is more relevant to the question. However, similarity scores should be interpreted together with the actual text rather than treated as absolute truth.
+
+JSON is a commonly used format for storing structured information. In a small RAG experiment, JSON can be used to store each document chunk together with its embedding vector and other metadata. This makes the results easy to inspect and reuse.
+
+A RAG system can improve the usefulness of a language model when the required information comes from a specific collection of documents. Examples include company documentation, product manuals, internal knowledge bases, technical guides, and frequently asked questions.
+
+A good retrieval system should return relevant information for questions that are answered by the source document. It should also avoid treating unrelated chunks as relevant simply because they share a few words with the question.
+
+Changing the chunk size can affect retrieval results. Smaller chunks may produce more precise matches, while larger chunks may preserve more surrounding context. Testing different chunk sizes is therefore an important part of building and evaluating a RAG pipeline.
+
+The goal of document ingestion is to transform unstructured information into a form that can be efficiently searched. Once documents have been chunked and embedded, a later stage of the RAG system can retrieve relevant chunks and provide them to a language model.
+
+RAG is useful because it allows applications to work with information that may not have been included in the original training data of a language model. By retrieving information from an external document collection, applications can provide answers based on a specific knowledge source.
