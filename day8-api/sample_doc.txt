@@ -1,0 +1,7 @@
+Artificial Intelligence is transforming software engineering.
+
+AI can automate code reviews, generate documentation, assist with testing,
+and provide intelligent recommendations to developers.
+
+Many organizations are adopting AI tools to improve productivity
+and reduce repetitive work.
